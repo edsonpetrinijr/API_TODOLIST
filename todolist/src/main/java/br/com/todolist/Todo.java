@@ -17,6 +17,8 @@ public class Todo {
     @Column(nullable = false)
     private StatusEnum status = StatusEnum.NOT_STARTED;
 
+    public Todo() {  }
+
     public Todo(String title, String description, StatusEnum status) {
         this.title = title;
         this.description = description;
